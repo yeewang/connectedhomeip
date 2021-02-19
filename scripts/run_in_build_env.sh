@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #
 # Copyright (c) 2020 Project CHIP Authors
 #
