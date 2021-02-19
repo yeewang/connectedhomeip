@@ -1,6 +1,7 @@
 # Temperature Sensor Example
 
 ## Temperature-measurement-app optimization
+
 Optimize the temperature-measurement-app to use less RAM and Flash.
 
 To enable this option set is_debug=false from command-line.
