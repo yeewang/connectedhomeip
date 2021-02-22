@@ -169,7 +169,7 @@
         {
             "label": "Build ESP32 all-clusters-app Example",
             "type": "shell",
-            "command": "scripts/examples/build-all-clusters-app.py",
+            "command": "source /sources/public/IoT/esp-idf/export.sh; scripts/examples/build-all-clusters-app.py",
             "group": "build",
             "problemMatcher": ["$gcc"]
         },
@@ -229,6 +229,19 @@
                 "fileLocation": [
                     "relative",
                     "${workspaceFolder}/examples/pigweed-app/nrfconnect/build"
+                ]
+            }
+        },
+        {
+            "label": "Build CHIP gateway (Linux)",
+            "type": "shell",
+            "command": "scripts/examples/gn_build_example.sh examples/chip-gateway/linux out/chip-gateway",
+            "group": "build",
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/out/chip-gateway/"
                 ]
             }
         }
